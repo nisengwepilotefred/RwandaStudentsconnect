@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background: #087f5b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+
+/* NAVIGATION */
+
+nav button {
+    background: white;
+    color: #087f5b;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #dff5ec;
+}
+
+
+/* MAIN */
+
+main {
+    min-height: 75vh;
+    padding: 30px;
+}
+
+
+/* PAGES */
+
+.page {
+    max-width: 900px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* HOME */
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 70px 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.hero h2 {
+    color: #087f5b;
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTONS */
+
+button {
+    background: #087f5b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #056044;
+}
+
+
+/* FORM */
+
+.form-box {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.form-box h2 {
+    color: #087f5b;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.dashboard h2 {
+    color: #087f5b;
+}
+
+
+/* COMMUNITY */
+
+.community {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.community h2 {
+    color: #087f5b;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+
+/* POSTS */
+
+.post {
+    background: #f1f5f9;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.post strong {
+    color: #087f5b;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

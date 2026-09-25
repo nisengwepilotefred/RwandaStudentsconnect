@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rwanda Students Connect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🇷🇼 Rwanda Students Connect</h1>
+
+    <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('register')">Create Account</button>
+        <button onclick="showPage('login')">Login</button>
+        <button onclick="showPage('community')">Community</button>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HOME -->
+
+    <section id="home" class="page">
+
+        <div class="hero">
+
+            <h2>Welcome to Rwanda Students Connect</h2>
+
+            <p>
+                A place where students in Rwanda can connect,
+                learn, discuss and share ideas.
+            </p>
+
+            <button onclick="showPage('register')">
+                Create Account
+            </button>
+
+            <button onclick="showPage('login')">
+                Login
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTER -->
+
+    <section id="register" class="page hidden">
+
+        <div class="form-box">
+
+            <h2>Create Student Account</h2>
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Full Name">
+
+            <input
+                id="school"
+                type="text"
+                placeholder="School Name">
+
+            <input
+                id="district"
+                type="text"
+                placeholder="District">
+
+            <input
+                id="level"
+                type="text"
+                placeholder="Class / Level">
+
+            <input
+                id="username"
+                type="text"
+                placeholder="Username">
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Password">
+
+            <button onclick="createAccount()">
+                Create Account
+            </button>
+
+            <p id="registerMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOGIN -->
+
+    <section id="login" class="page hidden">
+
+        <div class="form-box">
+
+            <h2>Student Login</h2>
+
+            <input
+                id="loginUsername"
+                type="text"
+                placeholder="Username">
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Password">
+
+            <button onclick="login()">
+                Login
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+
+    <section id="dashboard" class="page hidden">
+
+        <div class="dashboard">
+
+            <h2>Student Dashboard</h2>
+
+            <div id="studentInformation"></div>
+
+            <button onclick="showPage('community')">
+                Go to Community
+            </button>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMMUNITY -->
+
+    <section id="community" class="page hidden">
+
+        <div class="community">
+
+            <h2>Student Community</h2>
+
+            <p>
+                Share an idea or ask other students a question.
+            </p>
+
+            <textarea
+                id="postText"
+                placeholder="Write your discussion...">
+            </textarea>
+
+            <button onclick="postMessage()">
+                Post
+            </button>
+
+            <div id="posts"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Rwanda Students Connect
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
